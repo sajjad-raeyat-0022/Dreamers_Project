@@ -1,0 +1,151 @@
+#home-articles .articles-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  #home-articles .articles-container article:first-child,
+  #home-articles .articles-container article:last-child {
+    grid-template-columns: 1fr;
+    grid-column: 1;
+  }
+  
+
+@media (max-width:560px){
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar .logo{
+        margin-bottom: 0.5rem;
+        text-align: center 
+    }
+
+    #navbar ul{
+        padding: 0.5rem
+    }
+
+    #contact{
+        padding: 1.25rem
+    }
+
+  
+    #section2{
+        display: flex;
+        flex-direction: column
+        
+    }
+
+    #section2 .img{
+        
+        flex-basis: 400px ;
+    }
+ /* Navigation */
+ #main-nav .container {
+    grid-template-columns: 1fr;
+    grid-gap: 1.2rem;
+  }
+
+  #main-nav ul{
+      order :2
+  }
+
+  #main-nav ul,
+  #main-nav .logo {
+    justify-self: center;
+  }
+
+  #main-nav ul li a {
+    padding: 0.4rem;
+  }
+
+  #showcase .showcase-container,
+  #home-articles .articles-container,
+  #main-footer .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  #main-footer .footer-container div:last-child {
+    grid-column: 1;
+  }
+
+  #main-footer .footer-container div:first-child,
+  #main-footer .footer-container div:nth-child(3){
+    border-bottom: #444 dotted 1px;
+    padding-bottom: 1rem;
+  }
+
+  .page-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .page-container article {
+    grid-row: 1;
+  }
+
+}
+
+  
+#section1 .items{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-flow: wrap row;
+    padding: 1rem;
+    width: 55%;
+    margin: auto;
+    text-align: right;
+   
+}
+#section1 .items .item{
+    display: block;
+    /* flex-direction: row-reverse; */
+    padding: 1rem;
+    text-align: center;
+    /* justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex: 1;
+    order: 1; */
+    
+}
+#section1 .items .item img{ 
+    margin: auto;
+  width: 300;
+  height: 300;
+}
+
+#section3 .items img{
+    width: 80%
+}
+
+#section3 .items div:last-child{
+    display: none
+}
+#about-info .info-right,#about-info .info-left{
+    float: none;
+    width: 100%;
+}
+#about-info .info-left{
+    text-align: center;
+}
+#testimonials h2 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  #testimonials .testimonial {
+    display: block;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    opacity: 0.9;
+  }
+  
+  #testimonials .testimonial img {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+

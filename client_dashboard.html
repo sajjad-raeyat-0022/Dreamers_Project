@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style_Dashboard.css" />
+
+  <title> پنل کاربری </title>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-md navbar-light">
+
+    <button class="navbar-toggler mr-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-md-3 col-lg-3 col-xl-2 sidebar shadow-lg fixed-top">
+          <br>
+            <div class="border-bottom pb-3">
+              <img src="./img/man.svg" class="rounded-circle mr-3" width="60" alt="">
+              <br>
+              <a href="#" class="text-white mr-3"> کاربر شماره 1 </a>
+            </div>
+
+            <ul class="navbar-nav flex-column mt-4 p-0">
+
+              <li class="nav-item">
+                <a class="nav-link text-right text-white sidebar-link p-2 mb-2 current action" href="client_dashboard.html">
+                  <i class="fas fa-home text-light fa-lg ml-3"></i> داشبورد
+                </a>
+
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-right text-white sidebar-link p-2 mb-2" href="profile_client.html">
+                  <i class="fas fa-user text-light fa-lg ml-3"></i> پروفایل
+                </a>
+              </li>
+
+              <li class="nav-item"><a class="nav-link text-right text-white sidebar-link p-2 mb-2" href="#"><i
+                    class="fas fa-envelope text-light fa-lg ml-3"></i> پیام ها </a></li>
+                    <li class="nav-item"><a class="nav-link text-right text-white sidebar-link p-2 mb-2 " href="#" data-toggle="modal" data-target="#addPostModal"  ><i
+                      class="fas fa-file-alt text-light fa-lg ml-3"></i> تکمیل اطلاعات </a></li>
+              <li class="nav-item"><a class="nav-link text-right text-white sidebar-link p-2 mb-2" href="#"><i
+                    class="fas fa-cogs text-light fa-lg ml-3"></i> تنظیمات </a></li>
+                    <li class="nav-item"><a class="nav-link text-right text-white sidebar-link p-2 mb-2" href="#"><i
+                      class="fas fa-shopping-cart text-light fa-lg ml-3"></i> خرید اشتراک </a></li>
+                    <li class="nav-item"><a class="nav-link text-right text-white sidebar-link p-2 mb-2" href="#"><i
+                      class="fas fa-shopping-cart text-light fa-lg ml-3"></i> سبد خرید از فروشگاه  </a></li>
+            </ul>
+
+          </div>
+
+          <div class="col-md-9 col-lg-9 col-xl-10 top-navbar mr-auto bg-dark2 fixed-top py-2">
+
+            <div class="row align-items-center">
+
+              <div class="col-md-4">
+                <a href="#"
+                ><span class="text-primary logo"
+                  ><img
+                    src="./img/mainlogo02.png"
+                    alt="Dreamers Logo"
+                    width="250px"
+                    height="65px" /></span
+              ></a>
+
+              </div>
+
+              <div class="col-md-5">
+
+                <form action="#">
+                  <div class="input-group">
+                    <input type="text" class="form-control search-input" placeholder="جستجو ...">
+                    <button class="btn btn-danger search-button" type="button"><i class="fas fa-search"></i></button>
+                  </div>
+                </form>
+
+              </div>
+
+              <div class="col-md-3">
+
+                <ul class="navbar-nav">
+
+                  <li class="navbar-item icon-parent">
+                    <a href="#" class="nav-link icon-bullet text-left">
+                      <i class="fas fa-comments text-muted fa-lg"></i>
+                    </a>
+                  </li>
+
+                  <li class="navbar-item icon-parent">
+                    <a href="#" class="nav-link icon-bullet text-left"><i class="fas fa-bell text-muted fa-lg"></i></a>
+                  </li>
+
+                  <li class="navbar-item mr-auto">
+                    <a class="nav-link " href="index.html"><i class="fas fa-sign-out-alt text-danger fa-lg"></i></a>
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+ <!-- ADD POST MODAL -->
+ <div class="modal fade" id="addPostModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title"> تکمیل اطلاعات </h5>
+        <button class="close ml-0" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          <div class="form-group">
+            <label for="title"> نام </label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="title"> نام خانوادگی </label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="title"> کد ملی ولی  </label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="title"> کد ملی فرزند  </label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="title"> نام فرزند </label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="email"> ایمیل   </label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="phone"> شماره تلفن   </label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="text"> آدرس   </label>
+            <input type="text" class="form-control">
+          </div>
+         
+          <div class="form-group">
+            <label for="category"> جنسیت فرزند  </label>
+            <select class="form-control">
+              <option value=""> پسر </option>
+              <option value=""> دختر </option>
+            </select>
+          </div>
+        
+          <div class="form-group">
+            <label for="image"> آپلود تصویر </label>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="image">
+              <label for="image" class="custom-file-label text-left"> انتخاب فایل </label>
+            </div>
+            <small class="form-text text-muted"> حداکثر سایز 3 مگابایت </small>
+          </div>
+            <label for="image"> آپلود اسکن شناسنامه فرزند و والدین </label>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="image">
+              <label for="image" class="custom-file-label text-left"> انتخاب فایل </label>
+            </div>
+            <small class="form-text text-muted"> حداکثر سایز 3 مگابایت </small>
+          </div>
+          <div class="form-group">
+            <label for="body"> توضیحات </label>
+            <textarea name="body" class="form-control"></textarea>
+          </div>
+          <div class="modal-footer justify-content-start">
+            <button class="btn btn-primary" data-dismiss="modal"> ثبت اطلاعات </button>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+ <!-- PARDAKHT -->
+ <div class="modal fade" id="pardakht">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title"> اطلاعات پرداختی و درخواست  </h5>
+        <button class="close ml-0" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          <div class="form-group">
+            <label > نام پرستار : پرستار </label>
+          </div>
+          <div class="form-group">
+            <label > حقوق پایه پرستار : 100***100 </label>
+          </div>
+          <div class="form-group">
+            <label > تعداد ساعات درخواست پرستار   </label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label > میزان پیش پرداخت : 100***100 </label>
+          </div>
+          <div class="form-group">
+            <label > میزان پرداخت کل : 100***100 </label>
+          </div>
+         
+        </form>
+      </div>
+      <div class="modal-footer justify-content-start">
+        <button class="btn btn-primary" data-dismiss="modal"> ارسال اطلاعات و پرداخت    </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<br>
+  <section class="section">
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-xl-10 col-lg-9 col-md-9 mr-auto">
+
+          <div class="row">
+
+            <div class="col-12">
+
+              <div class="col-xl-10 col-lg-9 col-md-9 mr-auto">
+
+                <div class="row pt-md-5 mb-md-5">
+
+      
+                  <div class="col-sm-6 col-lg-3 p-2">
+      
+                    <div class="card shadow">
+      
+                      <div class="card-body">
+      
+                        <div class="d-flex justify-content-between">
+      
+                          <div class="text-muted">
+                            <h5>پرستاران</h5>
+                            <h5>20 </h5>
+                          </div>
+                          <i class="fas fa-users fa-3x text-info"></i>
+                        </div>
+      
+                      </div>
+      
+                      <div class="card-footer">
+                        <i class="fas fa-sync"></i>
+                        <span>آپدیت</span>
+                      </div>
+      
+                    </div>
+      
+                  </div>
+      
+                  <div class="col-sm-6 col-lg-3 p-2">
+      
+                    <div class="card shadow">
+      
+                      <div class="card-body">
+      
+                        <div class="d-flex justify-content-between">
+      
+                          <div class="text-muted">
+                            <h5>نظرات</h5>
+                            <h5> 120 </h5>
+                          </div>
+                          <i class="fas fa-clipboard-list fa-3x text-info"></i>
+                        </div>
+      
+                      </div>
+      
+                      <div class="card-footer">
+                        <i class="fas fa-sync"></i>
+                        <span> آپدیت </span>
+                      </div>
+      
+                    </div>
+      
+                  </div>
+      
+                  <div class="col-sm-6 col-lg-3 p-2">
+      
+                    <div class="card shadow">
+      
+                      <div class="card-body">
+      
+                        <div class="d-flex justify-content-between">
+                          <div class="text-muted">
+                            <h5> پست </h5>
+                            <h5> 50 </h5>
+                          </div>
+                          <i class="fas fa-pencil-alt fa-3x text-info"></i>
+                        </div>
+      
+                      </div>
+      
+                      <div class="card-footer">
+                        <i class="fas fa-sync"></i>
+                        <span>آپدیت</span>
+                      </div>
+      
+                    </div>
+      
+                  </div>
+      
+                </div>
+      
+              </div>
+
+<!-- HEADER -->
+              <h4 class="text-center text-muted font-weight-bold mb-3"> پرستاران </h4>
+
+              <table class="table bg-light text-center">
+
+                <thead class="thead-dark">
+                  <tr>
+                    <th>#</th>
+                    <th> نام </th>
+                    <th> اطلاعات </th>
+                    <th> تاریخ شروع به کار </th>
+                    <th> ارسال درخواست </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td> پرستار </td>
+                    <td> <a href="profile.html" class="btn btn-outline-danger"> مشاهده </a> </td>
+                    <td> 22 خرداد </td>
+                    <td>
+                      <a href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#pardakht"> درخواست </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td> پرستار </td>
+                    <td> <a href="profile.html" class="btn btn-outline-danger"> مشاهده </a> </td>
+                    <td> 22 خرداد </td>
+                    <td>
+                      <a href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#pardakht"> درخواست </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td> پرستار </td>
+                    <td> <a href="profile.html" class="btn btn-outline-danger"> مشاهده </a> </td>
+                    <td> 22 خرداد </td>
+                    <td>
+                      <a href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#pardakht"> درخواست </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td> پرستار </td>
+                    <td> <a href="profile.html" class="btn btn-outline-danger"> مشاهده </a> </td>
+                    <td> 22 خرداد </td>
+                    <td>
+                      <a href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#pardakht"> درخواست </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td> پرستار </td>
+                    <td> <a href="profile.html" class="btn btn-outline-danger"> مشاهده </a> </td>
+                    <td> 22 خرداد </td>
+                    <td>
+                      <a href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#pardakht"> درخواست </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td> پرستار </td>
+                    <td> <a href="profile.html" class="btn btn-outline-danger"> مشاهده </a> </td>
+                    <td> 22 خرداد </td>
+                    <td>
+                      <a href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#pardakht"> درخواست </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td> پرستار </td>
+                    <td> <a href="profile.html" class="btn btn-outline-danger"> مشاهده </a> </td>
+                    <td> 22 خرداد </td>
+                    <td>
+                      <a href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#pardakht"> درخواست </a>
+                    </td>
+                  </tr>
+                  
+
+              </table>
+
+              <nav>
+                <ul class="pagination justify-content-center">
+
+                  <li class="page-item">
+                    <a class="page-link py-2 px-3" href="#">
+                      <span>&laquo;</span>
+                    </a>
+                  </li>
+
+                  <li class="page-item active">
+                    <a class="page-link py-2 px-3 active" href="#">
+                      <span>1</span>
+                    </a>
+                  </li>
+
+                  <li class="page-item">
+                    <a class="page-link py-2 px-3" href="#">
+                      <span>2</span>
+                    </a>
+                  </li>
+
+                  <li class="page-item"><a class="page-link py-2 px-3" href="#">
+                      <span>3</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link py-2 px-3" href="#">
+                      <span>4</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link py-2 px-3" href="#">
+                      <span>5</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link py-2 px-3" href="#">
+                      <span>6</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link py-2 px-3" href="#">
+                      <span>&raquo;</span>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </nav>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <section class="loader">
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-xl-10 col-lg-9 col-md-9 mr-auto">
+
+          <div class="d-flex justify-content-center" style="margin-top: 150px">
+            <div class="spinner-grow" style="width: 5rem; height: 5rem;""></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
+    integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+  <script>
+    CKEDITOR.replace('body');
+  </script>
+  <script src="./js/chart.js"></script>
+
+  <script>
+
+    $('.section').hide();
+
+    setTimeout(function () {
+
+      $('.section').fadeIn();
+
+      $('.loader').fadeOut();
+
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+
+    }, 1000)
+  </script>
+
+<script>
+  $(document).ready(function () {
+
+    $('.count').each(function () {
+      $(this).prop('Counter', 0).animate({
+        Counter: $(this).text()
+      }, {
+          duration: 1000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now))
+          }
+        });
+    });
+
+  });
+</script>
+
+</body>
+
+</html>

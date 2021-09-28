@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./css/style_login_register.css" />
+
+  <title> ثبت نام کاربر </title>
+
+</head>
+
+<body>
+  <nav id="navbar" class="bg-dark">
+    <h1 class="logo">
+      <a href="#"
+        ><span class="text-primary"
+          ><img
+            src="./img/mainlogo02.png"
+            alt="Dreamers Logo"
+            width="250px"
+            height="65px" /></span
+      ></a>
+    </h1>
+    <ul>
+      <li><a href="index.html"> خانه </a></li>
+      <li><a href="about.html"> درباره ما </a></li>
+      <li><a href="register.html" class="current"> ثبت نام </a></li>
+      <li><a href="store.html"> فروشگاه </a></li>
+    </ul>
+  </nav>
+  <section>
+
+    <div class="container">
+
+      <div class="card shadow-lg my-5">
+
+        <div class="card-body p-0">
+
+          <div class="row">
+
+            <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+
+            <div class="col-lg-7">
+
+              <div class="p-5">
+
+                <div class="text-center">
+                  <h1 class="h4 text-muted mb-4"> ساخت حساب کاربری! </h1>
+                </div>
+
+                <form>
+
+                  <div class="form-group row">
+
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <input type="text" class="form-control border-rad" id="exampleFirstName" placeholder=" نام ">
+                    </div>
+
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control border-rad" id="exampleLastName"
+                        placeholder=" نام خانوادگی ">
+                    </div>
+
+                  </div>
+
+                  <div class="form-group">
+                    <input type="email" class="form-control border-rad" id="exampleInputEmail" placeholder=" ایمیل ">
+                  </div>
+
+                  <div class="form-group row">
+
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <input type="password" class="form-control border-rad" id="exampleInputPassword"
+                        placeholder="رمز ورود">
+                    </div>
+
+                    <div class="col-sm-6">
+                      <input type="password" class="form-control border-rad" id="exampleRepeatPassword"
+                        placeholder=" تکرار رمز ورود ">
+                    </div>
+
+                  </div>
+
+                  <div class="form-group">
+                    <label for="category"> انتخاب نوع کاربری </label>
+                    <select class="form-control">
+                      <option value=""> پرستار </option>
+                      <option value=""> کاربر </option>
+                    </select>
+                  </div>
+
+                  <a href="login.html" class="btn btn-primary border-rad btn-block">
+                    ساخت اکانت
+                  </a>
+
+                  <hr>
+
+                  <a href="index.html" class="btn btn-google border-rad btn-block">
+                    <i class="fab fa-google fa-fw"></i> ساخت اکانت با گوگل
+                  </a>
+
+                  <a href="index.html" class="btn btn-facebook border-rad btn-block">
+                    <i class="fab fa-facebook-f fa-fw"></i> ساخت اکانت با فیسبوک
+                  </a>
+
+                </form>
+
+                <hr>
+
+                <div class="text-center">
+                  <a class="small" href="#"> فراموشی پسورد؟ </a>
+                </div>
+
+                <div class="text-center">
+                  <a class="small" href="login.html"> آیا حساب داری؟ لاگین! </a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="py-2">
+    <div class="container footer-container">
+      <div>
+        <h3>اشتراک</h3>
+        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ .</p>
+        <form>
+          <input class="form-control border-rad" type="email" placeholder="ایمیل شما ..." />
+          <input type="submit" value="اشتراک" class="btn btn-primary" />
+        </form>
+      </div>
+
+      <div>
+        <h3>لینک های سایت</h3>
+        <ul class="list2">
+          <li><a href="#"> مقالات </a></li>
+          <li><a href="#"> برترین ها </a></li>
+          <li><a href="about.html"> درباره ما </a></li>
+          <li><a href="#"> تماس با ما</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>عضو شوید</h2>
+        <p>
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+          استفاده از طراحان گرافیک است.
+        </p>
+        <a href="register.html" class="btn btn-secondary"> عضویت </a>
+      </div>
+
+      <div>
+        <h2 class="footer-logo"></h2>
+        <a href="#"><span class="text-primary">
+          <img
+          src="./img/mainlogo02.png"
+          alt="Dreamers Logo"
+          width="250px"
+          height="65px" /></span>
+        </a>
+        <p>
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+          استفاده از طراحان گرافیک است.
+        </p>
+      </div>
+      
+      <div>
+        <p>
+          Dreamers-Group.ir &copy; 2020
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

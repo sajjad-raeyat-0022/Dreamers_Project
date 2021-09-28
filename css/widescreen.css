@@ -1,0 +1,19 @@
+#section1 .items{
+    display: flex;
+    padding: 1rem;
+}
+#section1 .items .item{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+#section1 .items .item img{ 
+    background: white;
+    padding: 0.75rem;
+    border-radius: 50%;
+    border-style: dashed;
+    border-color: #eb4d4b;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
